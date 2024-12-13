@@ -1,0 +1,71 @@
+@page "/About Me"
+<h1>About Me</h1>
+
+<style>
+    * {
+        box-sizing: border-box; /* Ensure padding and borders are included in element's total width/height */
+    }
+
+    html, body {
+        height: 100%; /* Set html and body to 100% height */
+        margin: 0; /* Remove default margin */
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .button-container {
+        margin-top: auto; /* Push button to the bottom */
+    }
+
+    .button-box {
+        height: 100px;
+        width: 200px;
+        padding: 10px;
+        margin: 5px;
+        background-color: #fffef5; /* Light background color */
+        border: 1px solid #000000; /* Black border */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth transition for hover */
+    }
+
+    .button-box:hover {
+        background-color: #ffc107; /* Change background color on hover */
+    }
+
+    .home-button {
+        position: fixed;
+        bottom: 0;
+        right: 0; /* Change to relative for better alignment */
+    }
+
+    .text-box {
+        position: relative; /* Change to relative for better layout */
+        margin: 3%;
+        height: auto; /* Allow auto height */
+        width: 400px;
+        background-color: #fffff0;
+        border: 1px solid #000000;
+        border-radius: 5px;
+    }
+
+    .text-box-clear {
+        padding: 10px; /* Add some padding */
+        height: auto; /* Allow auto height */
+    }
+
+</style>
+
+<div class="text-box">
+    <div class="text-box-clear">
+        Hello, my name is Billy, and I’m 16 years old. I have a strong passion for both music and computers. Right now, my goal is to expand my knowledge in different programming languages, which is why I decided to take on this project. I also aspire to start building PCs regularly after successfully rebuilding a computer. I listen to heavy metal every day and really enjoy playing the guitar as it helps me to relax and develop skills I can carry throughout my life. 
+    </div>
+</div>
+
+<div class="button-container">
+    <div class="button-box home-button">
+        <NavLink class="button-link" href="" style="color: #000000; display: block; text-decoration: none; height: 100%;">
+            Home
+        </NavLink>
+    </div>
+</div>
